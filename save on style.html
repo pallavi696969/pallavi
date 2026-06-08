@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>save on style - Label DKI</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="index.css">
+<style>
+   body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ded2b8;
+        }
+
+    
+        .top-bar {
+            background-color: #222;
+            color: #fff;
+            font-size: 12px;
+            letter-spacing: 1px;
+            padding: 8px 0;
+        }
+
+        
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-style: italic;
+        }
+
+        .nav-link {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #333 !important;
+            margin: 0 10px;
+        }
+.icons-group i {
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+
+/* Unique container styling */
+.label-search-group {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px; /* Sides ko round karne ke liye */
+    transition: all 0.4s ease;
+}
+
+/* Naya unique input jo ab ek proper box banega */
+.label-search-input-new {
+    width: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: #ebdab8; /* Light grey background box ke liye */
+    border-radius: 5px;  /* Corner thode round */
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    height: 35px; /* Box ki height */
+}
+
+/* Jab group par mouse cursor jaye (Hover) */
+.label-search-group:hover .label-search-input-new {
+    width: 220px; /* Box ki length */
+    padding: 0 15px; /* Box ke andar text ki jagah */
+    opacity: 1;
+    border: 1px solid #d2cfac; /* Light border box ko define karne ke liye */
+    background: #ffffff; /* Hover par white background */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* Halka shadow premium look ke liye */
+}
+
+/* Icon ki position set karne ke liye */
+.label-search-icon-trigger {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}  
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="top-bar text-center bg-dark">
+        <div class="container d-flex justify-content-between align-items-center text-light ts ">
+            <span class="d-none d-md-inline">📞 +91 00000 00000</span>
+            <span>UNBOXING VIDEO REQUIRED FOR EXCHANGE/SUPPORT | labeldki.help@gmail.com</span>
+            <span class="d-none d-md-inline">FREE SHIPPING AVAILABLE</span>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fst-italic" href="index.html">label <span class="fw-bold text-dark">DKI</span></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="zewar.html">Zewar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="combos.html">Combos</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="save on style.html">Save on Style</a></li>
+                </ul>
+               <div class="icons-group d-flex align-items-center">
+                    <div class="label-search-group">
+                 <input type="text" class="label-search-input-new" placeholder="Search...">
+                 <span class="label-search-icon-trigger">
+                 <i class="bi bi-search"></i> 
+                 </span>
+                 </div>
+                 <a href="login.html" style="text-decoration: none; color: inherit;">
+                 <i class="bi bi-person"></i>
+                 </a>
+                 <a href="cart.html" style="text-decoration: none; color: inherit;">
+    <i class="bi bi-bag"></i>
+</a>   
+                    
+                </div> 
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5 ">
+ <h1 class="font1 fw-bold">Save on Style</h1><br>
+ <p>Special prices on selected outfits and earrings, curated to help you build your style effortlessly. Create looks you love, grab<br>the best deals, and save while you style.</p><br>
+ 
+<p>No EXCHANGE<br><br>
+No Return/Refund on items under this category.E<br><br>
+Delivery period 15-20 business working days</p>
+</div>
+
+
+
+
+
+
+
+<!-- Collection Section -->
+<section class="products-section py-5  bg-white">
+<div class="container">
+    <div class="row mb-1 align-items-center mt-5">
+
+<div class="col-6"><button class="btn btn-outline-secondary btn-sm"><i class="bi bi-sliders"></i>    Filter</button></div>
+<div class="col-6 text-end">
+    <span class="text-muted small">Sort by:</span>
+<select class="border-0 bg-transparent small fw-regular">
+<option>Featured,</option>
+<option>Best selling</option>
+<option>Date old to New</option>
+<option>Price, low to high</option>
+<option>New to old</option>
+<option>Alphabetically, A-Z</option>
+</select>
+<p class="text-muted small mt-1">18 products</p>
+
+
+</div>
+</div>
+<div class="col-md-12">
+<div class="row g-4">
+
+<!-- Product 1 -->
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="zewar2.jpg" class="card-img-top" alt="">
+<div class="card-body text-center">
+<h5 class="card-title">Roshanara d17 black</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+<!-- Product 2 -->
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="zewar 1.jpg" class="card-img-top" alt="">
+<div class="card-body text-center">
+<h5 class="card-title">Gulshan-e-Noor (dark green Flowers)</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+<!-- Product 3 -->
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="pro-6.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">
+Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="pro-8.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">
+Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+<!-- col-2 -->
+
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="pro-2.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="zewar5.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="zewar7.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="pro-9.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">
+Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+<!-- col-3 -->
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="zewar9.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">
+Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="pro-5.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">
+Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="pro-7.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">
+Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="zewar4.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">
+Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+<!-- col-4 -->
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="pro-3.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">
+Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="pro-1.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">
+Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="pro-4.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">
+Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-3 mb-4 d-flex">
+<div class="card product-card4 w-100">
+<img src="zewar8.jpg" class="card-img-top " alt="" >
+<div class="card-body text-center">
+<h5 class="card-title">
+Rangrez d11</h5>
+<a href="#" class="btn btn-dark btn-sm">Shop Now</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<footer class="footer-section pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+
+            <!-- About -->
+            <div class="col-md-4 mb-4">
+                <h2 class="logo-text">labelDKI</h2>
+                <p>
+                    Our mission at Label DKI is to provide you with high-quality ethnic wear that blends
+                    tradition with contemporary fashion. We are dedicated to helping you look your best
+                    for every event.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Exchange & Refund Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-4 mb-4">
+                <h5>Contact</h5>
+                <p>labeldki.help@gmail.com</p>
+                <p>+91 8779002820</p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="text-center small">
+            © 2026, Label DKI
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
