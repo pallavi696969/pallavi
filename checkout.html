@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Label DKI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            /* Aapki website se milta julta color palette */
+            --brand-dark: #323d4d; /* Dark color buttons ke liye */
+            --bg-body:  #ded2b8;      /* Main content area background */
+            --bg-off-white: #fdfcfb; /* Description/ Care section wala color */
+            --bg-header-top: #222; /* Top-bar color (jahan phone number hai) */
+            --bg-gray-box: #fafafa; /* Summary area color */
+            --text-on-dark: #fff;
+        }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: var(--bg-body); 
+            color: #333; 
+            margin: 0; padding: 0;
+        }
+
+        /* 1. TOP HEADER (Phone/ Announcement) */
+        .top-bar { 
+            background-color: var(--bg-header-top); 
+            color: var(--text-on-dark); 
+            padding: 8px 0; 
+            font-size: 12px; 
+            letter-spacing: 1px;
+        }
+        .top-bar-content {
+            display: flex;
+            justify-content: center; /* Phone number ko beech mein lane ke liye */
+            align-items: center;
+        }
+        .top-bar-item { margin: 0 15px; }
+
+        /* 2. MAIN HEADER (Logo area) */
+        .main-header { 
+            padding: 20px 0; 
+            border-bottom: 1px solid #e1e1e1; 
+        }
+        .navbar-brand { 
+            font-family: 'Playfair Display', serif !important; 
+            font-size: 25px !important; 
+            font-style: italic !important;
+            font-weight: 500 !important; 
+            letter-spacing: 1px !important;
+            color: #000; 
+            text-decoration: none;
+        }
+        .brand-dki{
+            font-weight: 800 !important; 
+            margin-left: 4px;
+
+        }
+
+        /* Container & Spacing Setup */
+        .main-wrapper { margin-top: 40px; }
+        
+        /* Form Styling */
+        .section-title { 
+            font-size: 1.2rem; 
+            font-weight: 500; 
+            margin-bottom: 20px; 
+        }
+        .form-control, .form-select { 
+            border: 1px solid #d9d9d9; 
+            padding: 12px; 
+            font-size: 14px; 
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .form-control:focus {
+            border-color: var(--brand-dark);
+            box-shadow: none;
+        }
+
+        /* Order Summary Side (Gray Box) */
+        .summary-column {
+            background-color: var(--bg-gray-box);
+            border-left: 1px solid #e1e1e1;
+            padding: 40px;
+            min-height: 100vh;
+        }
+        .product-box { position: relative; margin-bottom: 25px; }
+        .product-img { 
+            width: 64px; height: 64px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            border: 1px solid #e1e1e1; 
+        }
+        .count-badge {
+            position: absolute; top: -10px; right: -10px;
+            background: #717171; color: white;
+            width: 20px; height: 20px;
+            border-radius: 50%; font-size: 11px;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        /* Payment & Shipping method box */
+        .method-box {
+            border: 1px solid #d9d9d9;
+            border-radius: 5px;
+            background: #fff;
+            overflow: hidden;
+        }
+        .method-row {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #d9d9d9;
+        }
+        .method-row:last-child { border-bottom: none; }
+        .active-row { background-color: #f0f5ff; border-left: 3px solid #5a7d95; } /* Billing highlighted box */
+
+        .btn-pay-now {
+            background-color: var(--brand-dark);
+            color: white;
+            width: 100%;
+            padding: 18px;
+            border-radius: 5px;
+            font-weight: 500;
+            border: none;
+            margin-top: 30px;
+            transition: 0.3s;
+        }
+        .btn-pay-now:hover { background-color: #1a2129; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            
+        </div>
+    </div>
+
+    <header class="main-header bg-white">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand fst-italic" href="index.html">label <span class="brand-dki"> DKI</span></a>
+            <a href="cart.html" class="text-dark"><i class="bi bi-bag"></i></a>
+        </div>
+    </header>
+
+    <div class="container main-wrapper mb-5">
+        <div class="row gx-5">
+            
+            <div class="col-lg-7 pe-lg-5">
+                <div class="d-flex justify-content-between align-items-baseline">
+                    <h5 class="section-title">Contact</h5>
+                    <a href="login.html" class="text-dark small text-decoration-underline">Log in</a>
+                </div>
+                <input type="email" class="form-control" placeholder="Email">
+                <div class="form-check mb-5">
+                    <input type="checkbox" class="form-check-input" id="newsletter">
+                    <label class="form-check-label small text-muted" for="newsletter">Email me with news and offers</label>
+                </div>
+
+                <h5 class="section-title">Delivery</h5>
+                <select class="form-select">
+                    <option>India</option>
+                </select>
+                <div class="row">
+                    <div class="col-md-6"><input type="text" class="form-control" placeholder="First name (optional)"></div>
+                    <div class="col-md-6"><input type="text" class="form-control" placeholder="Last name"></div>
+                </div>
+                <input type="text" class="form-control" placeholder="Address">
+                <input type="text" class="form-control" placeholder="Apartment, suite, etc. (optional)">
+                <div class="row">
+                    <div class="col-md-4"><input type="text" class="form-control" placeholder="City"></div>
+                    <div class="col-md-4"><select class="form-select"><option>Delhi</option></select></div>
+                    <div class="col-md-4"><input type="text" class="form-control" placeholder="PIN code"></div>
+                </div>
+                <input type="text" class="form-control mb-5" placeholder="Phone">
+
+                <h5 class="section-title">Payment</h5>
+                <p class="text-muted small mb-3">All transactions are secure and encrypted.</p>
+                <div class="method-box mb-5">
+                    <div class="method-row d-flex justify-content-between align-items-center">
+                        <div>
+                            <input type="radio" checked class="me-2">
+                            <span class="small fw-bold">Razorpay Secure (UPI, Cards, Wallets)</span>
+                        </div>
+                        <div class="payment-icons small opacity-75">
+                            <i class="bi bi-credit-card-2-back"></i> <i class="bi bi-wallet2"></i>
+                        </div>
+                    </div>
+                    <div class="p-4 text-center" style="background-color: var(--bg-off-white);">
+                        <p class="small text-muted mb-0">You'll be redirected to Razorpay Secure to complete your purchase.</p>
+                    </div>
+                </div>
+
+                <h5 class="section-title">Billing address</h5>
+                <div class="method-box">
+                    <div class="method-row active-row">
+                        <input type="radio" name="billing" checked class="me-2">
+                        <label class="small mb-0">Same as shipping address</label>
+                    </div>
+                    <div class="method-row">
+                        <input type="radio" name="billing" class="me-2">
+                        <label class="small mb-0">Use a different billing address</label>
+                    </div>
+                </div>
+
+                <button class="btn-pay-now">Pay now</button>
+            </div>
+
+            <div class="col-lg-5 summary-column d-none d-lg-block">
+                <div class="product-box d-flex align-items-center">
+                    <div class="position-relative">
+                        <img src="circle-motif orange.jpg" class="product-img" alt="Product">
+                        <span class="count-badge">1</span>
+                    </div>
+                    <div class="ms-3 flex-grow-1">
+                        <p class="mb-0 small fw-bold">Circle-motif orange set</p>
+                        <span class="text-muted extra-small" style="font-size: 12px;">3XL</span>
+                    </div>
+                    <p class="mb-0 small fw-bold">₹2,450.00</p>
+                </div>
+
+                <div class="d-flex gap-2 my-4">
+                    <input type="text" class="form-control mb-0" placeholder="Discount code">
+                    <button class="btn btn-light border px-4 small">Apply</button>
+                </div>
+
+                <div class="d-flex justify-content-between mb-2 small">
+                    <span class="text-muted">Subtotal</span>
+                    <span class="fw-bold">₹2,450.00</span>
+                </div>
+                <div class="d-flex justify-content-between mb-2 small border-bottom pb-3">
+                    <span class="text-muted">Shipping</span>
+                    <span class="text-muted">Enter shipping address</span>
+                </div>
+                <div class="d-flex justify-content-between mt-4">
+                    <h4 class="fw-bold" style="font-size: 1.1rem;">Total</h4>
+                    <div class="text-end">
+                        <span class="text-muted small me-2">INR</span>
+                        <span class="h4 fw-bold">₹2,450.00</span>
+                    </div>
+                </div>
+                <p class="text-muted mt-1" style="font-size: 11px;">Including ₹1,449.15 in taxes</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
