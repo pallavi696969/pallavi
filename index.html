@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label DKI Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfcfb;
+        }
+
+    
+        .top-bar {
+            background-color: #222;
+            color: #fff;
+            font-size: 12px;
+            letter-spacing: 1px;
+            padding: 8px 0;
+        }
+
+        
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-style: italic;
+        }
+
+        .nav-link {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #333 !important;
+            margin: 0 10px;
+        }
+
+        
+        .hero-section {
+            background-color: #f7eee2; 
+            padding: 60px 0;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .brand-title {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 3.5rem;
+            color: #5d4037;
+        }
+
+        .new-arrivals-text {
+            font-weight: 800;
+            letter-spacing: 6px;
+            font-size: 2.5rem;
+            color: #333;
+            margin-top: -10px;
+        }
+
+        
+        .product-card {
+            border: none;
+            background: none;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .img-hero {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            
+        }
+
+        .icons-group i {
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+
+/* Unique container styling */
+.label-search-group {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px; /* Sides ko round karne ke liye */
+    transition: all 0.4s ease;
+}
+
+/* Naya unique input jo ab ek proper box banega */
+.label-search-input-new {
+    width: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: #f4f4f4; /* Light grey background box ke liye */
+    border-radius: 5px;  /* Corner thode round */
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    height: 35px; /* Box ki height */
+}
+
+/* Jab group par mouse cursor jaye (Hover) */
+.label-search-group:hover .label-search-input-new {
+    width: 220px; /* Box ki length */
+    padding: 0 15px; /* Box ke andar text ki jagah */
+    opacity: 1;
+    border: 1px solid #ddd; /* Light border box ko define karne ke liye */
+    background: #ffffff; /* Hover par white background */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* Halka shadow premium look ke liye */
+}
+
+/* Icon ki position set karne ke liye */
+.label-search-icon-trigger {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+</style>
+</head>
+<body>
+
+    <div class="top-bar text-center">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span class="d-none d-md-inline">📞 +91 00000 00000</span>
+            <span>UNBOXING VIDEO REQUIRED FOR EXCHANGE/SUPPORT | labeldki.help@gmail.com</span>
+            <span class="d-none d-md-inline">FREE SHIPPING AVAILABLE</span>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand" href="lebal.html">label <span class="fw-bold text-dark">DKI</span></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="zewar.html">Zewar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="combos.html">Combos</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="save on style.html">Save on Style</a></li>
+                </ul>
+                <div class="icons-group d-flex align-items-center">
+                    <div class="label-search-group">
+                 <input type="text" class="label-search-input-new" placeholder="Search...">
+                 <span class="label-search-icon-trigger">
+                 <i class="bi bi-search"></i> 
+                 </span>
+                 </div>
+                 <a href="login.html" style="text-decoration: none; color: inherit;">
+                 <i class="bi bi-person"></i>
+                 </a>
+                 <a href="cart.html" style="text-decoration: none; color: inherit;">
+    <i class="bi bi-bag"></i>
+</a>   
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="brand-title">label DKI</div>
+                    <div class="new-arrivals-text">NEW <br> ARRIVALS</div>
+                    <button class="btn btn-dark mt-4 px-4 py-2 rounded-0">SHOP NOW</button>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="product-card">
+                                <img src="etenic wear 1.jpg" class="img-hero py-5" alt="Ethnic Wear 1">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-card">
+                                <img src="marrun suit.jpg" class="img-hero" alt="Ethnic Wear 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- 2nd part -->
+
+<div class="container-fluid bg">
+<div class="container py-5">
+    <div class="row justify-content-center text-center">
+        <div class="col-6 col-md-2 mb-4">
+            <div class="category-wrapper">
+                <div class="arch-shape">
+                    <img src="Banner_2_mzewar2.jpg" alt="Zewar">
+                </div>
+                <p class="category-name">Zewar</p>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2 mb-4">
+            <div class="category-wrapper">
+                <div class="arch-shape">
+                    <img src="new arival 5.jpg" alt="New Arrivals">
+                </div>
+                <p class="category-name">New Arrivals</p>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2 mb-4">
+            <div class="category-wrapper">
+                <div class="arch-shape">
+                    <img src="label dki.jpg" alt="Picks">
+                </div>
+                <p class="category-name">Label DKI Picks</p>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2 mb-4">
+            <div class="category-wrapper">
+                <div class="arch-shape">
+                    <img src="daily pahnawa.jpg" alt="Daily">
+                </div>
+                <p class="category-name">Daily Pehnawa</p>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-2 mb-4">
+            <div class="category-wrapper">
+                <div class="arch-shape">
+                    <img src="kuch khas.jpg" alt="Khas">
+                </div>
+                <p class="category-name">Kuch Khaas</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 3rd part -->
+
+<div class="container my-5 text-center">
+    <h1 class="display-4 fw-normal mb-1" style="font-family: 'Playfair Display', serif;">New Arrivals</h1>
+    <p class="text-muted fst-regular mb-5">Latest Finds, Right Now</p>
+
+    <div class="row g-4">
+        
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card h-100">
+                <div class="img-container">
+                    <img src="circle-motif orange.jpg" class="img-fluid" alt="Product Image">
+                </div>
+                <div class="product-info mt-3 text-start">
+                    <h5 class="product-title">Circle-motif orange set</h5>
+                    <p class="price">Rs 2,450</p>
+                    <div class="sizes mb-3">
+                        <span class="size-box">S</span><span class="size-box">M</span><span class="size-box">L</span><span class="size-box disabled">XL</span>
+                    </div>
+                    <div class="d-flex gap-2 mt-auto">
+                        <a href="cart.html" class="btn btn-outline-custom flex-grow-1 btn-sm text-center" style="text-decoration: none;">ADD TO CART</a>
+                        <a href="cart.html" class="btn btn-dark-custom flex-grow-1 btn-sm text-center" style="text-decoration: none;">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card h-100">
+                <div class="img-container">
+                    <img src="glumar grace.jpg" class="img-fluid" alt="Product Image">
+                </div>
+                <div class="product-info mt-3 text-start">
+                    <h5 class="product-title">Glumar Grace Sharara Set</h5>
+                    <p class="price">Rs 5,450</p>
+                    <div class="sizes mb-3">
+                        <span class="size-box">M</span><span class="size-box">L</span><span class="size-box">XL</span>
+                    </div>
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-outline-custom flex-grow-1 btn-sm">ADD TO CART</button>
+                        <button class="btn btn-dark-custom flex-grow-1 btn-sm">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card h-100">
+                <div class="img-container">
+                    <img src="gotta patti.jpg" class="img-fluid" alt="Product Image">
+                </div>
+                <div class="product-info mt-3 text-start">
+                    <h5 class="product-title">Florenza Grace Anarkali Set Green</h5>
+                    <p class="price">Rs 2,750</p>
+                    <div class="sizes mb-3">
+                        <span class="size-box">M</span><span class="size-box">L</span><span class="size-box">XXL</span>
+                    </div>
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-outline-custom flex-grow-1 btn-sm">ADD TO CART</button>
+                        <button class="btn btn-dark-custom flex-grow-1 btn-sm">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card h-100">
+                <div class="img-container">
+                    <img src="maroon set.jpg" class="img-fluid" alt="Product Image">
+                </div>
+                <div class="product-info mt-3 text-start">
+                    <h5 class="product-title">Maroon Kurta Set</h5>
+                    <p class="price">Rs 2,000</p>
+                    <div class="sizes mb-3">
+                        <span class="size-box">S</span><span class="size-box">M</span><span class="size-box">L</span>
+                    </div>
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-outline-custom flex-grow-1 btn-sm">ADD TO CART</button>
+                        <button class="btn btn-dark-custom flex-grow-1 btn-sm">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <div class="mt-5">
+        <button class="btn btn-dark-custom px-5 py-2 rounded-pill">VIEW ALL</button>
+    </div>
+</div>
+
+<!-- 4th part -->
+
+<div class="container my-5 text-center">
+    <h1 class="display-4 fw-normal mb-1" style="font-family: 'Playfair Display', serif;">Label DKI Picks</h1>
+    <p class="text-muted fst-regular mb-5">Hand-selected for their quality, comfort, and timeless appeal!</p>
+
+    <div class="row g-4">
+        
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card h-100">
+                <div class="img-container">
+                    <img src="sky.jpg" class="img-fluid" alt="Product Image">
+                </div>
+                <div class="product-info mt-3 text-start">
+                    <h5 class="product-title">Circle-motif orange set</h5>
+                    <p class="price">Rs 2,400</p>
+                    <div class="sizes mb-3">
+                        <span class="size-box">S</span><span class="size-box">M</span><span class="size-box">L</span><span class="size-box disabled">XL</span>
+                    </div>
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-outline-custom flex-grow-1 btn-sm">ADD TO CART</button>
+                        <button class="btn btn-dark-custom flex-grow-1 btn-sm">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card h-100">
+                <div class="img-container">
+                    <img src="yellow.jpg" class="img-fluid" alt="Product Image">
+                </div>
+                <div class="product-info mt-3 text-start">
+                    <h5 class="product-title">Glumar Grace Sharara Set</h5>
+                    <p class="price">Rs 1,450</p>
+                    <div class="sizes mb-3">
+                        <span class="size-box">M</span><span class="size-box">L</span><span class="size-box">XL</span>
+                    </div>
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-outline-custom flex-grow-1 btn-sm">ADD TO CART</button>
+                        <button class="btn btn-dark-custom flex-grow-1 btn-sm">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card h-100">
+                <div class="img-container">
+                    <img src="purple.jpg" class="img-fluid" alt="Product Image">
+                </div>
+                <div class="product-info mt-3 text-start">
+                    <h5 class="product-title">Florenza Grace Anarkali Set Green</h5>
+                    <p class="price">Rs 1,500</p>
+                    <div class="sizes mb-3">
+                        <span class="size-box">M</span><span class="size-box">L</span><span class="size-box">XXL</span>
+                    </div>
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-outline-custom flex-grow-1 btn-sm">ADD TO CART</button>
+                        <button class="btn btn-dark-custom flex-grow-1 btn-sm">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card h-100">
+                <div class="img-container">
+                    <img src="green kurta.jpg" class="img-fluid" alt="Product Image">
+                </div>
+                <div class="product-info mt-3 text-start">
+                    <h5 class="product-title">Maroon Kurta Set</h5>
+                    <p class="price">Rs 2,000</p>
+                    <div class="sizes mb-3">
+                        <span class="size-box">S</span><span class="size-box">M</span><span class="size-box">L</span>
+                    </div>
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-outline-custom flex-grow-1 btn-sm">ADD TO CART</button>
+                        <button class="btn btn-dark-custom flex-grow-1 btn-sm">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <div class="mt-5">
+        <button class="btn btn-dark-custom px-5 py-2 rounded-pill">VIEW ALL</button>
+    </div>
+</div>
+<!-- 5th part -->
+<div class="container-fluid bg">
+<div class="container my-5 py-5">
+    <div class="row align-items-center">
+        <div class="col-md-3 text-start mb-4 mb-md-0">
+            <h2 class="display-6 fw-normal mb-3" style="font-family: 'Playfair Display', serif;">Inside DKI</h2>
+            <p class="text-muted small mb-4">Everyday elegance, refined.</p>
+            <p class="text-muted small lh-lg">
+                At Label DKI, each design captures Dipika's signature elegance, bringing timeless ethnic sophistication to your wardrobe.
+            </p>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="inside-card">
+                        <div class="arch-container">
+                            <img src="anarkali purple.jpg" alt="Kaaya Noir Set">
+                            <div class="arch-overlay">
+                                <h6>New Arrivals</h6>
+                                <p>Kaaya Noir Set</p>
+                            </div>
+                        </div>
+                        <a href="#" class="shop-now-link">Shop Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inside-card">
+                        <div class="arch-container">
+                            <img src="anarkali white.jpg" alt="Tarannum Set">
+                            <div class="arch-overlay">
+                                <h6>New Arrivals</h6>
+                                <p>Tarannum Set</p>
+                            </div>
+                        </div>
+                        <a href="#" class="shop-now-link">Shop Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inside-card">
+                        <div class="arch-container">
+                            <img src="black anarkali.jpg" alt="Raasya Royal">
+                            <div class="arch-overlay">
+                                <h6>New Arrivals</h6>
+                                <p>Raasya Royal</p>
+                            </div>
+                        </div>
+                        <a href="#" class="shop-now-link">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- 6th part -->
+
+<div class="container my-5 text-center">
+    <h1 class="display-4 fw-normal mb-1" style="font-family: 'Playfair Display', serif;">Adorned to Perfection</h1>
+    <p class="text-muted fst-regular mb-5">Complete your look with perfectly matched jewels</p>
+
+    <div class="row g-4">
+        
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card h-100 position-relative">
+                <span class="badge-sold-out">Sold out</span>
+                <div class="img-container">
+                    <img src="ear11.webp" class="img-fluid" alt="Nizaam Jhumka">
+                </div>
+                <div class="product-info mt-3 text-start">
+                    <h5 class="product-title">Nizaam Jhumka White Stones</h5>
+                    <p class="price">Rs 1,699</p>
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-sold-out flex-grow-1 btn-sm" disabled>SOLD OUT</button>
+                        <button class="btn btn-dark-custom flex-grow-1 btn-sm">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card h-100">
+                <div class="img-container">
+                    <img src="ear2.webp" class="img-fluid" alt="Nazneen Jhumka">
+                </div>
+                <div class="product-info mt-3 text-start">
+                    <h5 class="product-title">Nazneen Jhumka Golden Stone</h5>
+                    <p class="price">Rs 1,799</p>
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-outline-custom flex-grow-1 btn-sm">ADD TO CART</button>
+                        <button class="btn btn-dark-custom flex-grow-1 btn-sm">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card h-100">
+                <div class="img-container">
+                    <img src="ear5.webp" class="img-fluid" alt="Nazneen Jhumka Multi">
+                </div>
+                <div class="product-info mt-3 text-start">
+                    <h5 class="product-title">Nazneen Jhumka Multi Stone</h5>
+                    <p class="price">Rs 1,799</p>
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-outline-custom flex-grow-1 btn-sm">ADD TO CART</button>
+                        <button class="btn btn-dark-custom flex-grow-1 btn-sm">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-card h-100">
+                <div class="img-container">
+                    <img src="ear7.webp" class="img-fluid" alt="Noorvi Tassels">
+                </div>
+                <div class="product-info mt-3 text-start">
+                    <h5 class="product-title">Noorvi Tassels Maroon Stone</h5>
+                    <p class="price">Rs 2,199</p>
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-outline-custom flex-grow-1 btn-sm">ADD TO CART</button>
+                        <button class="btn btn-dark-custom flex-grow-1 btn-sm">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <div class="mt-5">
+        <button class="btn btn-dark-custom px-5 py-2 rounded-pill">VIEW ALL</button>
+    </div>
+</div>
+
+<!-- 7th part -->
+ <div class="container-fluid abc">
+<div class="container my-5 py-5">
+    <div class="row g-3"><div class="col-md-4">
+            <div class="collection-card big-card">
+                <img src="Banner_2_mzewar2.jpg" alt="Zewar">
+                <div class="collection-overlay">
+                    <h2 class="zewar-title text-light"></h2>
+                    <p class="zewar-sub text-light"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="row g-3">
+                <div class="col-6">
+                    <div class="collection-card small-card">
+                        <img src="new aravial 2.jpg" alt="New Arrivals">
+                        <div class="small-card-overlay">New Arrivals</div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="collection-card small-card">
+                        <img src="dki.jpg" alt="Label DKI Picks">
+                        <div class="small-card-overlay">Label DKI Picks</div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="collection-card small-card">
+                        <img src="kuch khas2.jpg" alt="Kuch Khaas">
+                        <div class="small-card-overlay">Kuch Khaas</div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="collection-card small-card">
+                        <img src="daily pahnaw.jpg" alt="Daily Pehnawa">
+                        <div class="small-card-overlay">Daily Pehnawa</div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- 8th part -->
+
+
+
+
+<h2 class="text-center mb-5 section-title ft">Customer's Favorite</h2>
+  <div class="container one">
+    
+    
+
+    <div class="row align-items-center">
+      
+      
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="product-img">
+          <img src="blue.suit.jpg" class="img-fluid rounded" alt="Product Image">
+        </div>
+      </div>
+
+      <!-- Content Side -->
+      <div class="col-lg-6">
+        <div class="product-content pb-5">
+
+          <h3 class="product-title">ZehNÉoor Ensemble</h3>
+          <p class="price">Rs.3,850</p>
+
+          <!-- Sizes -->
+          <div class="mb-4">
+            <span class="size-label">Size</span>
+            <div class="d-flex gap-2 mt-2 flex-wrap">
+              <button class="size-btn active">S</button>
+              <button class="size-btn">M</button>
+              <button class="size-btn">L</button>
+              <button class="size-btn">XL</button>
+              <button class="size-btn">XXL</button>
+              <button class="size-btn">3XL</button>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="d-flex gap-3 mb-4 flex-wrap">
+            <button class="btn add-cart-btn">ADD TO CART</button>
+            <button class="btn buy-now-btn">BUY NOW</button>
+          </div>
+
+          
+          <p class="product-desc">
+            Grace meets grandeur in our ZehNÉoor Ensemble, a timeless piece that celebrates 
+            minimal elegance with royal undertones. Crafted in luxurious viscose muslin 
+            fabric, this kurta features an exquisitely embroidered neckline and delicate 
+            lace detailing all over, lending it an aura of refined femininity.
+          </p>
+
+          <a href="#" class="view-details">View full details →</a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+
+<!-- Top Feature Section -->
+<section class="features-section py-5 mt-5">
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-md-3 col-6 mb-4">
+                <i class="bi bi-bezier feature-icon"></i>
+                <h6 class="mt-3">Artisan Made</h6>
+            </div>
+
+            <div class="col-md-3 col-6 mb-4">
+                <i class="bi bi-box-seam feature-icon"></i>
+                <h6 class="mt-3">Weekly Launches</h6>
+            </div>
+
+            <div class="col-md-3 col-6 mb-4">
+                <i class="bi bi-gem feature-icon"></i>
+                <h6 class="mt-3">Premium Fabrics</h6>
+            </div>
+
+            <div class="col-md-3 col-6 mb-4">
+                <i class="bi bi-scissors feature-icon"></i>
+                <h6 class="mt-3">Quality Stitching</h6>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer-section pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+
+            <!-- About -->
+            <div class="col-md-4 mb-4">
+                <h2 class="logo-text">labelDKI</h2>
+                <p>
+                    Our mission at Label DKI is to provide you with high-quality ethnic wear that blends
+                    tradition with contemporary fashion. We are dedicated to helping you look your best
+                    for every event.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Exchange & Refund Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-4 mb-4">
+                <h5>Contact</h5>
+                <p>labeldki.help@gmail.com</p>
+                <p>+91 8779002820</p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="text-center small">
+            © 2026, Label DKI
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
